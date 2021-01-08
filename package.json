@@ -1,0 +1,51 @@
+{
+    "name": "package-for-example",
+    "version": "0.0.1",
+    "description": "Test description",
+    "keywords": [
+        "settings",
+        "configuration",
+        "..."
+    ],
+    "private": true,
+    "scripts": {
+        "start": "npm run start",
+        "dev": "npm run dev",
+        "build": "npm run build",
+        "lint": "eslint --fix .",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    },
+    "author": "@v1in",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/v1in/setfiles"
+    },
+    "homepage": "https://github.com/v1in/setfiles",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "./**/*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
+        ]
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "husky": "",
+        "lint-staged": "",
+        "prettier": "",
+        "eslint": "",
+        "eslint-config-prettier": "",
+        "eslint-plugin-jsx-a11y": "",
+        "eslint-plugin-prettier": "",
+        "eslint-plugin-react": "",
+        "eslint-plugin-react-hooks": "",
+        "eslint-plugin-simple-import-sort": ""
+    },
+    "browserslist": [
+        "More details -> https://github.com/browserslist/browserslist"
+    ]
+}
