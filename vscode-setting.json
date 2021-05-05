@@ -3,12 +3,11 @@
     "workbench.startupEditor": "none",
     "editor.tabSize": 4,
     "editor.wrappingIndent": "none",
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.lineHeight": 22,
     "editor.hover.enabled": true,
     "editor.smoothScrolling": true,
     "files.defaultLanguage": "html",
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "auto-rename-tag.activationOnLanguage": [
         "html",
         "xml",
@@ -21,22 +20,26 @@
     "workbench.editor.showTabs": true,
     "workbench.sideBar.location": "left",
     "git.ignoreLegacyWarning": true,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.macOptionIsMeta": false,
     "terminal.integrated.letterSpacing": 1,
     "terminal.integrated.rendererType": "canvas",
+    "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": false,
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": false,
     "gitlens.advanced.fileHistoryFollowsRenames": false,
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#9C575C",
-        "terminalCursor.foreground": "#9C575C",
+        "terminalCursor.foreground": "#EA5652",
         "sideBar.background": "#0A0A0A",
         "badge.background": "#FCCD43",
         "badge.foreground": "#000000",
         "activityBarBadge.background": "#FCCD43",
         "activityBarBadge.foreground": "#000000",
+        "tab.activeBorderTop": "#FCCD43",
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -45,13 +48,13 @@
     "tslint.jsEnable": true,
     "tslint.suppressWhileTypeErrorsPresent": true,
     "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "indentRainbow.includedLanguages": [
         "html",
@@ -78,7 +81,7 @@
     "gitlens.views.lineHistory.location": "gitlens",
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -2,
     "editor.detectIndentation": true,
     "editor.renderWhitespace": "selection",
     "workbench.iconTheme": "file-icons",
@@ -90,5 +93,13 @@
     ],
     "editor.codeActionsOnSave": null,
     "editor.semanticTokenColorCustomizations": null,
-    "workbench.colorTheme": "Bear Theme"
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorTheme": "Bear Theme",
+    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
 }
