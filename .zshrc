@@ -97,3 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Add the init script of Starship - https://starship.rs/guide/#installation
+eval "$(starship init zsh)"
