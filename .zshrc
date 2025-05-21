@@ -97,6 +97,34 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gs="git status"
+alias vim="nvim"
+alias lla="ll -a"
+alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset) - %C(bold blue)(%aD) %C(dim blue)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold magenta)%d%C(reset)' --all"
+
+# Custom allias for git commit message
+# 1. https://stackoverflow.com/a/34340688
+# 2. https://linuxize.com/post/bash-if-else-statement/
+# 3. list of color codes - https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+# 4. list of symbols - http://panmental.de/symbols/info.htm
+
+function gcv {
+  YELLOW="\e[33m"
+  ENDCOLOR="\e[0m"
+  RED="\e[31m"
+
+  if [[ "$1" = "" ]]
+    then
+      echo "${RED}✗ error: enter your commit message!${ENDCOLOR}"
+  elif [[ "$1" != "" ]] && [[ "$2" = "--no" ]]
+    then
+      echo "${YELLOW}⚡ hint: skipped pre-commit!${ENDCOLOR}"
+      git commit --no-verify -m "$1"
+  else
+    git commit -m "$1"
+  fi
+}
+
 
 # Add the init script of Starship - https://starship.rs/guide/#installation
 eval "$(starship init zsh)"
